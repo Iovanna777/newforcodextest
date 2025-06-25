@@ -1,0 +1,6 @@
+Уважаемый {{ client_name }},
+
+По вашему делу нами были получены следующие документы:
+{% for doc in documents %}
+- {{ doc.filename }}
+{% endfor %}
